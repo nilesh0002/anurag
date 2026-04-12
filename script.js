@@ -16,13 +16,26 @@ if (menuToggle && navLinks) {
     const expanded = menuToggle.getAttribute("aria-expanded") === "true";
     menuToggle.setAttribute("aria-expanded", String(!expanded));
     navLinks.classList.toggle("show");
+    document.body.classList.toggle("menu-open", !expanded);
   });
 
   navAnchors.forEach((anchor) => {
     anchor.addEventListener("click", () => {
       navLinks.classList.remove("show");
       menuToggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
     });
+  });
+
+  document.addEventListener("click", (event) => {
+    const clickedInsideNav = navLinks.contains(event.target);
+    const clickedToggle = menuToggle.contains(event.target);
+
+    if (!clickedInsideNav && !clickedToggle && navLinks.classList.contains("show")) {
+      navLinks.classList.remove("show");
+      menuToggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+    }
   });
 }
 

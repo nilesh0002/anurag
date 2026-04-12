@@ -26,6 +26,10 @@ body {
   overflow-x: hidden;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -499,24 +503,28 @@ p {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 768px) {
+  .container {
+    width: min(1120px, 100% - 1.5rem);
+  }
+
   .menu-toggle {
     display: inline-block;
   }
 
   .nav-links {
-    position: absolute;
-    right: 4%;
-    top: 72px;
-    min-width: 210px;
+    position: fixed;
+    left: 0.75rem;
+    right: 0.75rem;
+    top: 70px;
     background: var(--color-white);
-    border-radius: 12px;
+    border-radius: 14px;
     border: 1px solid var(--color-gray-200);
     box-shadow: var(--shadow-soft);
-    padding: 0.6rem;
+    padding: 0.9rem;
     flex-direction: column;
-    gap: 0.3rem;
-    transform: translateY(-8px);
+    gap: 0.45rem;
+    transform: translateY(-10px);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.22s ease, transform 0.22s ease;
@@ -524,7 +532,7 @@ p {
 
   .nav-links a {
     display: block;
-    padding: 0.5rem 0.6rem;
+    padding: 0.68rem 0.7rem;
     border-radius: 8px;
   }
 
@@ -540,7 +548,13 @@ p {
   }
 
   .hero {
-    min-height: 60vh;
+    min-height: 56vh;
+    align-items: end;
+    padding-bottom: 1.2rem;
+  }
+
+  .hero-content {
+    text-align: center;
   }
 
   .hero .btn,
@@ -549,8 +563,29 @@ p {
     width: 100%;
   }
 
+  .products .container,
+  .about .container,
+  .video-section .container,
+  .contact .container,
+  .map-section .container,
+  .form-section .container {
+    padding-inline: 0.2rem;
+  }
+
+  .product-grid,
+  .contact-grid {
+    gap: 0.95rem;
+  }
+
+  .product-card,
+  .contact-item,
+  .modern-form,
+  .about-highlight {
+    border-radius: 12px;
+  }
+
   .section-padding {
-    padding: 3.1rem 0;
+    padding: 2.5rem 0;
   }
 }
 
@@ -570,6 +605,17 @@ p {
   .contact-item,
   .modern-form {
     padding: 1rem;
+  }
+
+  .footer-layout {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .video-wrap iframe,
