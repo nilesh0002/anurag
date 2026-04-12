@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshBite E-Commerce modern single-page website">
+  <title>FreshBite E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-mark" aria-label="Loading"></div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="FreshBite Home">Fresh<span>Bite</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section-padding">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">Fresh Deals Every Day</p>
+        <h1>Taste the Best, Shop the Smart Way</h1>
+        <p class="tagline">Your trusted e-commerce destination for delicious favorites, fast delivery, and value-packed offers.</p>
+        <a class="btn btn-primary" href="#products">Explore Products</a>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section-padding" id="products">
+      <div class="container">
+        <h2>Our Products</h2>
+        <p class="section-subtitle">Browse our customer favorites and add what you love.</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=70" alt="Classic Burger" loading="lazy" decoding="async">
+            <div class="product-body">
+              <h3>Classic Burger</h3>
+              <p class="price">$5.99</p>
+              <button class="btn btn-card" data-product="Classic Burger">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=800&q=70" alt="Crispy Fries" loading="lazy" decoding="async">
+            <div class="product-body">
+              <h3>Crispy Fries</h3>
+              <p class="price">$2.49</p>
+              <button class="btn btn-card" data-product="Crispy Fries">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=70" alt="Cheese Pizza" loading="lazy" decoding="async">
+            <div class="product-body">
+              <h3>Cheese Pizza</h3>
+              <p class="price">$8.49</p>
+              <button class="btn btn-card" data-product="Cheese Pizza">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=70" alt="Fresh Salad Bowl" loading="lazy" decoding="async">
+            <div class="product-body">
+              <h3>Fresh Salad Bowl</h3>
+              <p class="price">$4.79</p>
+              <button class="btn btn-card" data-product="Fresh Salad Bowl">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+      <div class="container about-layout">
+        <div>
+          <h2>About Us</h2>
+          <p>FreshBite started with a simple mission: make quality food and daily essentials easy to order online, with no compromise on taste or freshness. We combine trusted products, transparent pricing, and quick service in one convenient destination.</p>
+          <p>From classic comfort meals to lighter options, our catalog is built around what customers enjoy most. Every order is handled with care so you get consistency, value, and a great experience every time.</p>
+          <p>We believe shopping should be fast, friendly, and rewarding. That is why we keep improving our menu, offers, and support to serve you better each day.</p>
+        </div>
+        <div class="about-highlight" role="note" aria-label="Why customers choose us">
+          <h3>Why Customers Choose Us</h3>
+          <ul>
+            <li>Fresh ingredients and top-quality products</li>
+            <li>Affordable pricing and combo offers</li>
+            <li>Fast checkout and reliable delivery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section section-padding" id="video">
+      <div class="container">
+        <h2>Watch Our Story</h2>
+        <p class="section-subtitle">See how we prepare, pack, and deliver your favorites.</p>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/F4NQ0P0Q4x4"
+            title="FreshBite promotional video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Address</h3>
+            <p>123 Market Street, City Center, NY 10001</p>
+          </div>
+          <div class="contact-item">
+            <h3>Phone</h3>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p>support@freshbite.com</p>
+          </div>
+          <div class="contact-item">
+            <h3>Hours</h3>
+            <p>Mon-Sun: 9:00 AM - 11:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section section-padding" id="map">
+      <div class="container">
+        <h2>Find Us on Map</h2>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Times%20Square%20New%20York&output=embed"
+            title="FreshBite location map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section section-padding" id="form">
+      <div class="container form-layout">
+        <div>
+          <h2>Order / Inquiry Form</h2>
+          <p class="section-subtitle">Send your order request or ask anything. We will get back quickly.</p>
+        </div>
+        <form class="modern-form" action="#" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Order or inquiry subject" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <p>&copy; 2026 FreshBite. All rights reserved.</p>
+      <ul class="footer-links" aria-label="Footer links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
