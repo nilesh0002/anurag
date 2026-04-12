@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Classic Burger">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe082"/>
+      <stop offset="100%" stop-color="#ffcc00"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="680" cy="80" r="54" fill="#da291c" opacity="0.16"/>
+  <rect x="160" y="180" width="480" height="48" rx="24" fill="#f5b041"/>
+  <rect x="170" y="225" width="460" height="28" rx="14" fill="#7d3c1f"/>
+  <rect x="170" y="250" width="460" height="18" rx="9" fill="#58d68d"/>
+  <rect x="160" y="265" width="480" height="48" rx="24" fill="#f5b041"/>
+  <text x="400" y="420" text-anchor="middle" fill="#1c1c1c" font-family="Arial, sans-serif" font-size="48" font-weight="700">Classic Burger</text>
+</svg>

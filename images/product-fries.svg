@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Crispy Fries">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3cd"/>
+      <stop offset="100%" stop-color="#ffe082"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <circle cx="120" cy="90" r="46" fill="#da291c" opacity="0.16"/>
+  <rect x="260" y="140" width="38" height="180" rx="14" fill="#ffd54f"/>
+  <rect x="305" y="120" width="38" height="200" rx="14" fill="#ffca28"/>
+  <rect x="350" y="130" width="38" height="190" rx="14" fill="#ffd54f"/>
+  <rect x="395" y="110" width="38" height="210" rx="14" fill="#ffca28"/>
+  <rect x="440" y="128" width="38" height="192" rx="14" fill="#ffd54f"/>
+  <path d="M240 240 L560 240 L530 360 Q400 410 270 360 Z" fill="#da291c"/>
+  <text x="400" y="430" text-anchor="middle" fill="#1c1c1c" font-family="Arial, sans-serif" font-size="48" font-weight="700">Crispy Fries</text>
+</svg>

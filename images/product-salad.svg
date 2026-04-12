@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Fresh Salad Bowl">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f5e9"/>
+      <stop offset="100%" stop-color="#fff9c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg4)"/>
+  <ellipse cx="400" cy="280" rx="190" ry="88" fill="#8d6e63"/>
+  <ellipse cx="400" cy="255" rx="175" ry="78" fill="#a1887f"/>
+  <circle cx="330" cy="230" r="26" fill="#66bb6a"/>
+  <circle cx="380" cy="220" r="24" fill="#81c784"/>
+  <circle cx="430" cy="235" r="28" fill="#4caf50"/>
+  <circle cx="470" cy="220" r="22" fill="#66bb6a"/>
+  <circle cx="410" cy="205" r="12" fill="#da291c"/>
+  <circle cx="455" cy="250" r="12" fill="#da291c"/>
+  <text x="400" y="430" text-anchor="middle" fill="#1c1c1c" font-family="Arial, sans-serif" font-size="48" font-weight="700">Fresh Salad Bowl</text>
+</svg>
