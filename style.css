@@ -451,11 +451,13 @@ p {
   .modern-form textarea {
     font-size: 16px;
   }
+}
 
 .site-footer {
-  background: var(--color-black);
+  background: linear-gradient(180deg, #171717 0%, #101010 100%);
   color: var(--color-white);
-  padding: 1.2rem 0;
+  padding: 1.4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-layout {
@@ -466,22 +468,31 @@ p {
   flex-wrap: wrap;
 }
 
+.footer-layout p {
+  margin: 0;
+  color: #e8e8e8;
+}
+
 .footer-links {
   list-style: none;
   display: flex;
   gap: 1rem;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
   color: #f2f2f2;
   text-decoration: none;
+  opacity: 0.9;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .footer-links a:hover,
 .footer-links a:focus-visible {
   color: var(--color-yellow);
+  opacity: 1;
 }
 
 @keyframes fadeUp {
@@ -842,6 +853,11 @@ p {
     gap: 0.8rem;
   }
 
+  .footer-links a {
+    display: inline-flex;
+    padding: 0.35rem 0.15rem;
+  }
+
   .video-wrap iframe,
   .map-wrap iframe {
     min-height: 250px;
@@ -849,5 +865,9 @@ p {
 
   .section-padding {
     padding: 2rem 0;
+  }
+
+  .site-footer {
+    padding: 1.1rem 0;
   }
 }
