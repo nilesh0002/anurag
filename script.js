@@ -4,6 +4,17 @@ const navAnchors = navLinks ? navLinks.querySelectorAll("a") : [];
 const productButtons = document.querySelectorAll(".btn-card");
 const backToTop = document.getElementById("backToTop");
 const pageLoader = document.getElementById("pageLoader");
+const enrollmentValue = document.getElementById("enrollmentValue");
+
+// Enrollment Number Handler
+function setEnrollmentNumber(enrollmentNo) {
+  if (enrollmentValue) {
+    enrollmentValue.textContent = enrollmentNo || "--";
+  }
+}
+
+// Set a sample enrollment number (replace with dynamic value)
+setEnrollmentNumber("03517701725");
 
 window.addEventListener("load", () => {
   if (pageLoader) {
