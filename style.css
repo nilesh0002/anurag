@@ -32,7 +32,14 @@ body.menu-open {
 
 img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
+}
+
+section {
+  width: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -211,6 +218,9 @@ p {
   z-index: 1;
   animation: fadeUp 0.8s ease both;
   padding: 0 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .eyebrow {
@@ -260,6 +270,8 @@ p {
   overflow: hidden;
   box-shadow: var(--shadow-soft);
   transition: transform 0.24s ease, box-shadow 0.24s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card:hover {
@@ -276,6 +288,9 @@ p {
 
 .product-body {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
 }
 
 .price {
@@ -424,14 +439,14 @@ p {
   padding: 0.74rem 0.9rem;
   font: inherit;
   margin-bottom: 0.45rem;
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  @media (max-width: 768px) {
-    .modern-form input,
-    .modern-form textarea {
-      font-size: 16px;
-    }
+@media (max-width: 768px) {
+  .modern-form input,
+  .modern-form textarea {
+    font-size: 16px;
+  }
 
 .site-footer {
   background: var(--color-black);
@@ -523,6 +538,11 @@ p {
     width: min(1120px, 100% - 1.5rem);
   }
 
+  .section-padding {
+    padding: 16px 0;
+    margin-bottom: 20px;
+  }
+
   .menu-toggle {
     display: inline-block;
   }
@@ -572,10 +592,30 @@ p {
     text-align: center;
   }
 
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .enrollment-number {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+
   .hero .btn,
   .form-section .btn,
   .product-card .btn {
     width: 100%;
+    padding: 12px;
+    font-size: 16px;
   }
 
   .products .container,
@@ -589,14 +629,20 @@ p {
 
   .product-grid,
   .contact-grid {
-    gap: 0.95rem;
+    gap: 16px;
+    grid-template-columns: 1fr;
   }
 
   .product-card,
   .contact-item,
   .modern-form,
   .about-highlight {
-    border-radius: 12px;
+    border-radius: 10px;
+  }
+
+  .video-wrap iframe,
+  .map-wrap iframe {
+    min-height: 250px;
   }
 
   .section-padding {
